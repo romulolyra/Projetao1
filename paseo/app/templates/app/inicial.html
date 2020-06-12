@@ -1,0 +1,45 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Paseo{% endblock %}
+{% block content %}
+ <div class="container">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Bem vindo ao PASEO!</h1>
+      <p class="lead">Um webapp para você conhecer coleguinhas e melhorar seu transporte diário.</p>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="https://via.placeholder.com/286x180" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Jorge de Capadocia</h5>
+            <p class="card-text">Aluno de Design \n gosta de videojogos</p>
+            <a href="#" class="btn btn-primary">Ir com Jorge</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="https://via.placeholder.com/286x180" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Maria Maria</h5>
+            <p class="card-text">Aluna de CC gosta de dormir</p>
+            <a href="#" class="btn btn-primary">Ir com MAria</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="https://via.placeholder.com/286x180" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Lucia no céu</h5>
+            <p class="card-text">Com Diamantes</p>
+            <a href="#" class="btn btn-primary">Ir com  Lucia</a>
+          </div>
+        </div>
+      </div>
+  </div>
+ </div>
+{% endblock %}
