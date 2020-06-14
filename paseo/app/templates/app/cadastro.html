@@ -1,0 +1,58 @@
+{% extends 'app/base.html' %}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+
+..........
+
+
+<form>
+    <div class="custom-file">
+  <input type="file" class="custom-file-input" id="customFile">
+  <label class="custom-file-label" for="customFile">Escolha sua foto</label>
+</div>
+  <div class="form-row" >
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Senha</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">EnDereço</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Outros usuários não terão acesso a seu endereço">
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">Placa do veículo</label>
+      <input type="text" class="form-control" id="inputCity" placeholder="Apenas para motoristas">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">Curso</label>
+      <select id="inputState" class="form-control">
+        <option selected>Escolha seu curso</option>
+        <option>Ciências da Computação</option>
+        <option>Design</option>
+
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">CEP</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Lembre de mim
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Continuar</button>
+</form>
+{% endblock content %}
