@@ -1,11 +1,12 @@
 from .forms import UserForm
+from .models import   User
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
 
 
 def inicial(request):
-
-    return render(request, 'app/inicial.html')
+    usuarios = User.objects.all()
+    return render(request, 'app/inicial.html',{'usuarios':usuarios})
 
 def sobre(request):
     return render(request, 'app/sobre.html')
